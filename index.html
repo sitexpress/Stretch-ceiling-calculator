@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body> 
+
+  <div class="section"> 
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-8 text-center">
+          <h2 class="mb-2 section-title">Калькулятор</h2>
+          <p class="text-danger mb-2">Информацию о новогодних скидках уточняйте у оператора!</p>
+        </div>
+        <div class="calculator">
+          <div class="stri area">
+            <div class="stri_text area_text">Вид материала</div>
+            <div class="stri_input area_input"><select id="material"><option value="matt">Матовый</option><option value="glossy">Глянцевый</option><option value="satin">Сатиновый</option><option value="cloth">Тканевый</option><option value="colorful">Цветной</option><option value="photoprint">Фотопечать</option><option value="textured">Фактурный</option></select></div>  
+          </div>
+          <hr class="bg-light">
+          <div class="stri material">
+            <div class="stri_text material_text">Площадь потолка</div>
+            <div class="stri_input material_input"><input class="expenses-item" placeholder="м2 "></div>  
+          </div>
+          <hr class="bg-light">
+          <div class="stri angles">
+            <div class="stri_text anglesl_text">Количество углов</div>
+            <div class="stri_input angles_input"><input class="expenses-item" placeholder="шт "></div>  
+          </div>
+          <hr class="bg-light">
+          <div class="stri chandelier">
+            <div class="stri_text chandelier_text">Количество люстр</div>
+            <div class="stri_input chandelier_input"><input class="expenses-item" placeholder="шт "></div>  
+          </div>
+          <hr class="bg-light">
+          <div class="stri light">
+            <div class="stri_text light_text">Количество точечных светильников</div>
+            <div class="stri_input light_input"><input class="expenses-item" placeholder="шт "></div>  
+          </div>
+          <hr class="bg-light">
+          <div class="stri pipe">
+            <div class="stri_text pipe_text">Обход трубы, уходящей в потолок</div>
+            <div class="stri_input pipe_input"><input class="expenses-item" placeholder="шт "></div>  
+          </div>
+          <div class="result_btn">
+            <button class="btn btn-lg">Рассчитать</button>
+          </div> 
+          <hr class="bg-light">
+          <div class="result">
+            <div class="stri_text result_text">ИТОГО:</div>
+            <div class="result_num preserve-whitespace" id="result-item">&nbsp</div>
+          </div>
+          <hr class="bg-light">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/calculator.js"></script>
+</body>
+</html>
